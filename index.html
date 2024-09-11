@@ -11,49 +11,59 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/index.css">
     <title>Lista de Compras</title>
   </head>
   <body>
-    <main>
+    <main class="flex-collumn ">
       <img src="./assets/Imagens/logo.png">
 
+      <div class="container flex-collumn ">
       <h1>Compras da semana</h1>
 
-      <form>
-        <input type="text" name="inputNewItem" id="inputNewItem">
-        <button type="submit" id="buttonAddNewItem">Adicionar item</button>
+      <form class="flex-row">
+        <input type="text" name="inputNewItem" id="inputNewItem" placeholder="Adicione um novo item">
+        <button type="submit" id="buttonAddNewItem" class="label">Adicionar item</button>
       </form>
 
-      <div class="listItens">
-        <div class="item">
+      <div class="listItens flex-collumn">
+        <div class="item flex-row">
+          <div class="flex-row">
           <input type="checkbox" name="checkItem" id="checkItem">
-          <span class="nameItem">Pão de forma</span>
+          <span class="nameItem label">Pão de forma</span>
+        </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
-        <div class="item">
+        <div class="item flex-row">
+          <div class="flex-row">
           <input type="checkbox" name="checkItem" id="checkItem">
-          <span class="nameItem">Bolacha</span>
+          <span class="nameItem label">Bolacha</span>
+          </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
-        <div class="item">
+        <div class="item flex-row">
+          <div class="flex-row">
           <input type="checkbox" name="checkItem" id="checkItem">
-          <span class="nameItem">Café preto</span>
+          <span class="nameItem label">Café preto</span>
+          </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
-        <div class="item">
+        <div class="item flex-row">
+          <div class="flex-row">
           <input type="checkbox" name="checkItem" id="checkItem">
-          <span class="nameItem">Suco de laranja</span>
+          <span class="nameItem label">Suco de laranja</span>
+          </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
       </div>
       <div class="removedItem">
         <i class="fi fi-sc-exclamation"></i>
-        <span>O item foi removido da lista</span>
+        <span class="label">O item foi removido da lista</span>
         <i class="fi fi-rr-cross"></i>
       </div>
+    </div>
     </main>
   </body>
 </html>
