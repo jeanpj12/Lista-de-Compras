@@ -70,9 +70,29 @@ main {
           gap: 20px;
           align-items: center;
 
-          input[type="checkbox"] {
+          .checkbox {
            cursor: pointer;
-           border: 2px solid #ccc;
+           width: 15px;
+           height: 15px;
+           background-image: url('../assets/Icons/state=Default.svg');
+           background-clip: border-box;
+           background-position: center;
+
+           &:hover{
+            border: 1px solid var(--content-tertiary);
+            border-radius: 4px;
+
+          }
+        }
+
+          .checked {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            background-clip: border-box;
+            background-position: center;
+            background-image: url('../assets/Icons/state=selected.svg');
+          }
           }
         }
 
@@ -83,7 +103,26 @@ main {
           cursor: pointer;
         }
       }
+
+      .removedItem {
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 15px;
+        background-color: var(--color-danger);
+        color: var(--always-white);
+        border-radius: 15px;
+        align-items: center;
+
+        #closenNotification {
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+
+    .hide {
+      display: none;
+    }
+    
     }
   }
-}
 

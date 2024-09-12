@@ -31,39 +31,40 @@
       <div class="listItens flex-collumn">
         <div class="item flex-row">
           <div class="flex-row">
-          <input type="checkbox" name="checkItem" id="checkItem">
+          <div class="checkbox  check"></div>
           <span class="nameItem label">Pão de forma</span>
         </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
         <div class="item flex-row">
           <div class="flex-row">
-          <input type="checkbox" name="checkItem" id="checkItem">
+          <div class="checked check"></div>
           <span class="nameItem label">Bolacha</span>
           </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
         <div class="item flex-row">
           <div class="flex-row">
-          <input type="checkbox" name="checkItem" id="checkItem">
+          <div class="checkbox check"></div>
           <span class="nameItem label">Café preto</span>
           </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
         <div class="item flex-row">
           <div class="flex-row">
-          <input type="checkbox" name="checkItem" id="checkItem">
+          <div class="checkbox check"></div>
           <span class="nameItem label">Suco de laranja</span>
           </div>
           <button class="removeItem"><i class="fi fi-rr-trash"></i></button>
         </div>
       </div>
-      <div class="removedItem">
+      <div class="removedItem flex-row">
         <i class="fi fi-sc-exclamation"></i>
         <span class="label">O item foi removido da lista</span>
-        <i class="fi fi-rr-cross"></i>
+        <i class="fi fi-rr-cross" id="closenNotification"></i>
       </div>
     </div>
     </main>
+    <script src="./script.js" module="type"></script>
   </body>
 </html>
