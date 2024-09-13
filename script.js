@@ -24,8 +24,10 @@ loadItens(itens);
 
 form.onsubmit = (e) => {
   e.preventDefault();
-  newItem = createItem(input.value);
-  listItens.prepend(newItem);
+  itens.push({complete: false, name: input.value})
+  console.log(itens)
+  update()
+  input.value = ''
 };
 
 function loadItens(itens) {
@@ -66,10 +68,21 @@ function createItem(Item,index) {
     const checkbox = event.target
     const itemIndex = parseInt(checkbox.getAttribute('data-index'), 10)
     checkItem(itemIndex)
+    console.log(itemIndex)
     checkbox.classList.toggle('checked')
   }
 
+  newItem.querySelector('.removeItem i').onclick = () => {
+    itens.splice(index, 1)
+    update()
+    removedItem.classList.remove('hide')
+  }
+
   return newItem;
+}
+
+function deleteItem(index){
+  console.log("Deletar: " + itens.index)
 }
 
 function removeAll() {
